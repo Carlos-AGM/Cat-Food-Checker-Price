@@ -69,7 +69,7 @@ def enviar_mensaje_verificacion():
     enviar_notificacion("Verificando el precio!")
 
 # Programación para ejecutar periódicamente
-schedule.every(30).minutes.do(verificar_cambio)
+schedule.every(5).minutes.do(verificar_cambio)
 schedule.every(24).hours.do(enviar_mensaje_verificacion)
 
 print("Monitoreo iniciado...")
