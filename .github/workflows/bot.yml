@@ -2,7 +2,7 @@ name: Ejecutar Bot de Precios
 
 on:
   schedule:
-    - cron: "*/1 * * * *"  # Ejecuta cada 24 horas a la medianoche UTC
+    - cron: "0 0 * * *"  # Ejecuta cada 24 horas a la medianoche UTC
   workflow_dispatch:
 
 jobs:
