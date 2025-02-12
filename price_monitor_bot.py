@@ -70,9 +70,7 @@ def enviar_mensaje_verificacion():
 
 # Programación para ejecutar periódicamente
 schedule.every(5).minutes.do(verificar_cambio)
-schedule.every(24).hours.do(enviar_mensaje_verificacion)
+schedule.every(2).minutes.do(enviar_mensaje_verificacion)
 
 print("Monitoreo iniciado...")
-while True:
-    schedule.run_pending()
-    time.sleep(60)
+
